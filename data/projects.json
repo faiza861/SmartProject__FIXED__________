@@ -1,0 +1,90 @@
+[
+  {
+    "id": "prj-37f42e49",
+    "name": "Smart Trash Bin System",
+    "description": "",
+    "deadline": "2026-01-10",
+    "progress": 20.0,
+    "managerId": "mgr-1",
+    "tasks": [
+      {
+        "id": "tsk-9f0af6",
+        "name": "You should complete the Smart Trash Bin System within Deadline : 2026-01-10",
+        "description": "You should complete the Smart Trash Bin System within Deadline : 2026-01-10",
+        "assignedMemberId": "mem-dced90",
+        "completed": false,
+        "progress": 20.0
+      }
+    ]
+  },
+  {
+    "id": "prj-8d7677ac",
+    "name": "Smart Drone Delievery System",
+    "description": "",
+    "deadline": "2026-01-10",
+    "progress": 50.0,
+    "managerId": "mgr-1",
+    "tasks": [
+      {
+        "id": "tsk-c5210f",
+        "name": "You should complete the Smart Drone Delievry Systme within Deadline: 2026-01-10",
+        "description": "You should complete the Smart Drone Delievry Systme within Deadline: 2026-01-10",
+        "assignedMemberId": "mem-dced90",
+        "completed": false,
+        "progress": 50.0
+      }
+    ]
+  },
+  {
+    "id": "prj-342c39ad",
+    "name": "Smart Hospital Management System",
+    "description": "",
+    "deadline": "2026-03-13",
+    "progress": 0.0,
+    "managerId": "mgr-1",
+    "tasks": [
+      {
+        "id": "tsk-cc9ff1",
+        "name": "You should complete the Smart Hospital Management System within due date: 2026-03-13",
+        "description": "You should complete the Smart Hospital Management System within due date: 2026-03-13",
+        "assignedMemberId": "mem-f0468c",
+        "completed": false,
+        "progress": 0.0
+      }
+    ]
+  },
+  {
+    "id": "prj-fb9e32bf",
+    "name": "ABC",
+    "description": "",
+    "deadline": "2026-01-09",
+    "progress": 1.9,
+    "managerId": "mgr-1",
+    "tasks": [
+      {
+        "id": "tsk-6b8657",
+        "name": "You Should complete it",
+        "description": "You Should complete it",
+        "assignedMemberId": "mem-9ed973",
+        "completed": false,
+        "progress": 1.9
+      }
+    ]
+  },
+  {
+    "id": "prj-dd54eafe",
+    "name": "SPM",
+    "description": "",
+    "deadline": "2026-01-29",
+    "progress": 0.0,
+    "tasks": []
+  },
+  {
+    "id": "prj-fe3c0fcd",
+    "name": "de3yjyd4edhyg4ed4g",
+    "description": "",
+    "deadline": "2026-02-14",
+    "progress": 0.0,
+    "tasks": []
+  }
+]

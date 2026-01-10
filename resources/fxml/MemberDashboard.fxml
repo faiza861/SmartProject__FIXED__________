@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.MemberDashboardController"
+      spacing="20"
+      styleClass="root"
+      stylesheets="@../css/MemberDashboard.css">
+
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+
+    <!-- HEADER -->
+    <VBox spacing="5">
+        <Label fx:id="welcomeLabel" styleClass="title-text" />
+        <Label text="Here are your assigned tasks" styleClass="subtitle-text" />
+    </VBox>
+
+    <!-- MAIN CARD -->
+    <VBox spacing="18" styleClass="glass-card">
+
+        <Label text="My Assigned Tasks" styleClass="section-title" />
+        <ListView fx:id="tasksList" prefHeight="220" />
+
+        <!-- Progress Display -->
+        <VBox spacing="6">
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Label text="Progress" />
+                <Label fx:id="progressValueLabel" styleClass="progress-text" />
+            </HBox>
+            <ProgressBar fx:id="progressBar" prefWidth="420" />
+        </VBox>
+
+        <!-- Controls -->
+        <HBox spacing="12" alignment="CENTER_LEFT">
+            <Button text="−" onAction="#decreaseProgress" styleClass="round-btn" />
+            <TextField fx:id="progressField" prefWidth="80" />
+            <Button text="+" onAction="#increaseProgress" styleClass="round-btn" />
+            <Button fx:id="updateProgressBtn" text="Update" styleClass="primary-btn" />
+        </HBox>
+
+        <Label fx:id="statusLabel" />
+
+    </VBox>
+
+    <!-- FOOTER -->
+    <HBox alignment="CENTER_RIGHT">
+        <Button text="Back to Login" onAction="#onBackToLogin" styleClass="secondary-btn" />
+    </HBox>
+
+</VBox>

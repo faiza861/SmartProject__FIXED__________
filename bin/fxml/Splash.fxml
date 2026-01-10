@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.Label?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="controllers.SplashController"
+           fx:id="root"
+           prefWidth="900" prefHeight="600"
+           style="-fx-background-color: linear-gradient(to bottom, #061a2d, #0a3147);">
+
+    <VBox alignment="CENTER" spacing="25">
+
+        <!-- Circular Logo -->
+        <ImageView fx:id="logo"
+                   fitWidth="250"
+                   fitHeight="250"
+                   preserveRatio="true"
+                   smooth="true"/>
+
+        <!-- Developer Text -->
+        <Label fx:id="devText"
+               text="Developed by Faiza Qayyum &amp; Sherhyar Mutee"
+               style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: white;"/>
+    </VBox>
+
+</StackPane>

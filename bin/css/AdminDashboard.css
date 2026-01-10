@@ -1,0 +1,169 @@
+/* ==========================================================
+   ROOT (Light Theme)
+========================================================== */
+.admin-root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: linear-gradient(to bottom, #f5f9ff, #e7f0ff, #f5f9ff);
+    -fx-padding: 20;
+    -fx-text-fill: #0a1a2f;
+    -fx-font-size: 15px;
+}
+
+/* ==========================================================
+   TOP CONTROLS BAR
+========================================================== */
+.top-controls {
+    -fx-padding: 16;
+    -fx-background-color: rgba(0,0,0,0.08);
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-border-color: rgba(0,0,0,0.15);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 16, 0.3, 0, 2);
+}
+
+/* ==========================================================
+   INPUT FIELDS (TextField, TextArea, ComboBox)
+========================================================== */
+.input-field,
+.input-area,
+.combo-box-base {
+    -fx-background-color: rgba(255,255,255,0.95);
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+    -fx-padding: 12;
+    -fx-border-color: rgba(0,122,255,0.55);
+    -fx-text-fill: #0a1a2f;
+    -fx-prompt-text-fill: #7a8998;
+    -fx-font-size: 15px;
+    -fx-font-weight: normal;
+}
+
+.input-area {
+    -fx-control-inner-background: rgba(255,255,255,0.9);
+    -fx-text-fill: #0a1a2f;
+}
+
+.input-field:focused,
+.input-area:focused,
+.combo-box-base:focused {
+    -fx-effect: dropshadow(gaussian, rgba(0,122,255,0.4), 14, 0.25, 0, 0);
+    -fx-border-color: #1a73ff;
+}
+
+/* ==========================================================
+   COMBOBOX DROPDOWN FIX
+========================================================== */
+.combo-box-base .combo-box-popup {
+    -fx-background-color: #ffffff; /* solid white popup */
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+    -fx-border-color: #c7d2e3;
+}
+
+.combo-box-base .list-cell {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #0a1a2f;
+    -fx-padding: 8 12;
+}
+
+.combo-box-base .list-cell:hover {
+    -fx-background-color: #e4ecff;
+}
+
+.combo-box-base .list-cell:selected {
+    -fx-background-color: #1a73ff;
+    -fx-text-fill: white;
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+.primary-btn {
+    -fx-background-color: linear-gradient(to bottom, #1a73ff, #0f5bcc);
+    -fx-text-fill: white;
+    -fx-background-radius: 14;
+    -fx-padding: 12 24;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+.primary-btn:hover {
+    -fx-background-color: linear-gradient(to bottom, #4d8fff, #1a73ff);
+}
+
+.primary-btn:pressed {
+    -fx-background-color: #0d3d80;
+}
+
+.danger-btn {
+    -fx-background-color: #d32f2f;
+    -fx-background-radius: 14;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+.danger-btn:hover {
+    -fx-background-color: #f44336;
+}
+
+.back-btn {
+    -fx-background-color: #0061a8;
+    -fx-text-fill: white;
+    -fx-background-radius: 14;
+    -fx-font-size: 15px;
+}
+
+.back-btn:hover {
+    -fx-background-color: #0b7ad1;
+}
+
+/* ==========================================================
+   PROJECT LIST (ListView)
+========================================================== */
+.project-list {
+    -fx-background-color: transparent;
+}
+
+.project-list .list-cell {
+    -fx-background-radius: 14;
+    -fx-background-color: rgba(255,255,255,0.95);
+    -fx-border-color: rgba(0,0,0,0.12);
+    -fx-border-radius: 14;
+    -fx-padding: 12;
+    -fx-font-size: 15px;
+    -fx-text-fill: #0a1a2f;
+    -fx-wrap-text: true;
+}
+
+.project-list .list-cell .label,
+.project-list .list-cell .text {
+    -fx-text-fill: #0a1a2f;
+    -fx-font-size: 15px;
+}
+
+.project-list .list-cell:hover {
+    -fx-background-color: rgba(0,122,255,0.1);
+    -fx-cursor: hand;
+}
+
+.project-list .list-cell:selected {
+    -fx-background-color: #1a73ff;
+    -fx-text-fill: white;
+}
+
+/* Optional: description inside project list cells */
+.project-list .list-cell .description {
+    -fx-text-fill: #2a3b5f;
+    -fx-font-size: 14px;
+    -fx-font-style: italic;
+}
+
+/* ==========================================================
+   STATUS LABELS
+========================================================== */
+.status-label {
+    -fx-text-fill: #c91414;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}

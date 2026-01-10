@@ -1,0 +1,111 @@
+/* ==========================================================
+DASHBOARD HEADER / USER NAME (LIGHTWEIGHT)
+========================================================== */
+
+.dashboard-title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(to right, #2f80ed, #56ccf2);
+}
+
+/* Subtle emphasis instead of shadow */
+.dashboard-title:hover {
+    -fx-text-fill: linear-gradient(to right, #2563eb, #38bdf8);
+}
+
+
+/* ==========================================================
+GLASS CARD (NO GPU-HEAVY EFFECTS)
+========================================================== */
+
+.glass-card {
+    -fx-background-color: rgba(255,255,255,0.85);
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-border-color: rgba(47,128,237,0.15);
+}
+
+/* Color contrast instead of shadow/translate */
+.glass-card:hover {
+    -fx-border-color: rgba(47,128,237,0.45);
+    -fx-background-color: rgba(255,255,255,0.95);
+}
+
+
+/* ==========================================================
+LIST VIEW CELLS (FAST + RESPONSIVE)
+========================================================== */
+
+.list-cell {
+    -fx-background-color: rgba(255,255,255,0.75);
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: transparent;
+    -fx-padding: 12 16;
+}
+
+/* Hover = instant highlight (no animation) */
+.list-cell:filled:hover {
+    -fx-background-color: #eef4ff;
+    -fx-border-color: #c7dbff;
+}
+
+/* Selected = strong but clean */
+.list-cell:filled:selected {
+    -fx-background-color: linear-gradient(to right, #2f80ed, #56ccf2);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-color: transparent;
+}
+
+
+/* ==========================================================
+RISK BADGE (ZERO EFFECTS, PURE COLOR)
+========================================================== */
+
+.risk-badge {
+    -fx-background-color: #eaf1ff;
+    -fx-text-fill: #1f2937;
+    -fx-font-weight: bold;
+    -fx-padding: 6 14;
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+    -fx-border-color: #c7dbff;
+}
+
+.risk-low {
+    -fx-background-color: #dcfce7;
+    -fx-text-fill: #166534;
+    -fx-border-color: #22c55e;
+}
+
+.risk-medium {
+    -fx-background-color: #fef9c3;
+    -fx-text-fill: #854d0e;
+    -fx-border-color: #facc15;
+}
+
+.risk-high {
+    -fx-background-color: #fee2e2;
+    -fx-text-fill: #7f1d1d;
+    -fx-border-color: #ef4444;
+}
+
+
+/* ==========================================================
+STATUS LABELS (INSTANT FEEDBACK)
+========================================================== */
+
+.success-label {
+    -fx-background-color: #dcfce7;
+    -fx-text-fill: #166534;
+    -fx-padding: 6 12;
+    -fx-background-radius: 12;
+}
+
+.error-label {
+    
+    -fx-text-fill: #7f1d1d;
+    -fx-padding: 6 12;
+    -fx-background-radius: 12;
+}

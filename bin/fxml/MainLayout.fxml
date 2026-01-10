@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.MainLayoutController"
+      alignment="TOP_CENTER"
+      spacing="20"
+      prefWidth="900"
+      prefHeight="600"
+      styleClass="root">
+
+    <!-- Logo -->
+    <ImageView fx:id="logo"
+               fitWidth="160"
+               preserveRatio="true" />
+
+    <!-- Pane where Login / Register will appear -->
+    <StackPane fx:id="contentPane"
+               prefWidth="400"
+               prefHeight="420" />
+</VBox>

@@ -1,0 +1,186 @@
+/* =========================
+   ROOT
+   ========================= */
+.manager-root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: linear-gradient(to bottom, #f5faff, #eaf3ff);
+    -fx-padding: 20;
+    -fx-text-fill: #0a1a2f;
+    -fx-font-size: 15px;
+}
+
+/* =========================
+   PANEL TITLES
+   ========================= */
+.panel-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0a1a2f;
+    -fx-padding: 0 0 12 0;
+}
+
+/* =========================
+   PANELS
+   ========================= */
+.left-panel,
+.middle-panel,
+.right-panel {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d9e2ef;
+    -fx-border-width: 1;
+    -fx-border-radius: 16;
+    -fx-background-radius: 16;
+    -fx-padding: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 6, 0, 0, 2);
+}
+
+/* =========================
+   INPUT FIELDS & COMBOBOX
+   ========================= */
+.input-field,
+.input-area,
+.combo-box-base {
+    -fx-background-color: rgba(255,255,255,0.95);
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+    -fx-padding: 12;
+    -fx-border-color: rgba(0,122,255,0.55);
+    -fx-text-fill: #0a1a2f;
+    -fx-prompt-text-fill: #7a8998;
+    -fx-font-size: 15px;
+}
+
+.combo-box-base:hover {
+    -fx-border-color: #1a73ff;
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+.primary-btn {
+    -fx-background-color: linear-gradient(to bottom, #1a73ff, #0f5bcc);
+    -fx-text-fill: white;
+    -fx-background-radius: 14;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-padding: 12 24;
+}
+
+.primary-btn:hover {
+    -fx-background-color: linear-gradient(to bottom, #4d8fff, #1a73ff);
+}
+
+.danger-btn {
+    -fx-background-color: #d32f2f;
+    -fx-text-fill: white;
+    -fx-background-radius: 14;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.back-btn {
+    -fx-background-color: #0061a8;
+    -fx-text-fill: white;
+    -fx-background-radius: 14;
+    -fx-cursor: hand;
+}
+
+/* =========================
+   LISTVIEW: GENERAL FIX
+   ========================= */
+/* Remove default selection blue overlay from JavaFX */
+.list-cell:filled:selected:focused,
+.list-cell:filled:selected {
+    -fx-background-insets: 0;
+}
+
+/* =========================
+   PROJECT LIST CELLS
+   ========================= */
+.project-list .list-cell {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d9e2ef;
+    -fx-border-radius: 14;
+    -fx-background-radius: 14;
+    -fx-padding: 12;
+    -fx-font-size: 14px;
+    -fx-text-fill: #0a1a2f;
+}
+
+.project-list .list-cell:hover {
+    -fx-background-color: #f0f4ff;
+    -fx-border-color: #4d79ff;
+}
+
+.project-list .list-cell:selected {
+    -fx-background-color: #1a73ff;
+    -fx-border-color: #1a73ff;
+    -fx-text-fill: white;
+}
+
+/* =========================
+   TASK LIST CELLS
+   ========================= */
+.task-list .list-cell {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d9e2ef;
+    -fx-border-radius: 14;
+    -fx-background-radius: 14;
+    -fx-padding: 12;
+    -fx-font-size: 14px;
+    -fx-text-fill: #0a1a2f;
+    -fx-alignment: top-left;
+}
+
+.task-list .list-cell:hover {
+    -fx-background-color: #f0f9ff;
+    -fx-border-color: #93c5fd;
+}
+
+.task-list .list-cell:selected {
+    -fx-background-color: #1a73ff;
+    -fx-border-color: #1a73ff;
+    -fx-text-fill: white;
+}
+
+/* Fix wrapping inside task cells */
+.task-list .list-cell .label {
+    -fx-wrap-text: true;
+}
+
+/* =========================
+   SUGGESTIONS AREA
+   ========================= */
+.suggestions-area {
+    -fx-background-color: rgba(255,255,255,0.9);
+    -fx-border-color: #d9e2ef;
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+    -fx-padding: 12;
+    -fx-font-size: 14px;
+    -fx-text-fill: #0a1a2f;
+}
+
+.suggestions-area:focused {
+    -fx-border-color: #1a73ff;
+}
+
+.suggestions-area:hover {
+    -fx-border-color: #4d79ff;
+}
+
+/* =========================
+   STATUS LABEL
+   ========================= */
+.status-label {
+    -fx-text-fill: #ef4444;
+    -fx-font-weight: bold;
+}
+
+/* =========================
+   SCROLLPANE
+   ========================= */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}

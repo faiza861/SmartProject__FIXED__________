@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.ManagerDashboardController"
+            prefWidth="1100" prefHeight="600"
+            styleClass="manager-root"
+            stylesheets="@../css/ManagerDashboard.css">
+
+    <children>
+        <HBox spacing="15"
+              AnchorPane.topAnchor="0"
+              AnchorPane.leftAnchor="0"
+              AnchorPane.rightAnchor="0"
+              AnchorPane.bottomAnchor="0">
+
+            <padding>
+                <Insets top="10" bottom="10" left="10" right="10"/>
+            </padding>
+
+            <!-- LEFT PANEL -->
+            <VBox spacing="10" prefWidth="300" styleClass="left-panel" VBox.vgrow="ALWAYS">
+                <Label fx:id="projectsTitleLabel" text="Projects" styleClass="panel-label"/>
+                <TextField fx:id="searchProjectField" promptText="Search Projects..." prefWidth="280" styleClass="input-field"/>
+                <ListView fx:id="projectsList" VBox.vgrow="ALWAYS" styleClass="project-list"/>
+            </VBox>
+
+            <!-- MIDDLE PANEL -->
+            <VBox spacing="15" prefWidth="500" styleClass="middle-panel" VBox.vgrow="ALWAYS">
+                <Label fx:id="tasksTitleLabel" text="Assigned Tasks" styleClass="panel-label"/>
+                <ListView fx:id="tasksList" VBox.vgrow="ALWAYS" styleClass="task-list"/>
+
+                <HBox spacing="10">
+                    <ComboBox fx:id="memberComboBox" promptText="Select Member" prefWidth="180" styleClass="combo-box-base"/>
+                    <TextField fx:id="taskDescField" promptText="Task Description" prefWidth="250" styleClass="input-field"/>
+                    <Button fx:id="assignTaskBtn" text="Assign" onAction="#onAssignTask" styleClass="primary-btn"/>
+                </HBox>
+
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <Label text="Project Progress (%)" style="-fx-font-weight:bold;"/>
+                    <TextField fx:id="progressField" prefWidth="80" styleClass="input-field"/>
+                    <Button fx:id="updateProgressBtn" text="Update" onAction="#onUpdateProgress" styleClass="primary-btn"/>
+                </HBox>
+
+                <Label fx:id="statusLabel" style="-fx-text-fill:#ef4444; -fx-font-weight:bold;"/>
+                <Button fx:id="backBtn" text="Back to Login" onAction="#onBackToLogin" styleClass="back-btn"/>
+            </VBox>
+
+            <!-- RIGHT PANEL -->
+            <VBox spacing="10" prefWidth="300" styleClass="right-panel" VBox.vgrow="ALWAYS">
+                <Label fx:id="suggestionsTitleLabel" text="AI Suggestions" styleClass="panel-label"/>
+                <TextArea fx:id="suggestionsArea" editable="false" wrapText="true"
+                          VBox.vgrow="ALWAYS" styleClass="suggestions-area"/>
+            </VBox>
+
+        </HBox>
+    </children>
+</AnchorPane>

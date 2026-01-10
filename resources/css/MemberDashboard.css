@@ -1,0 +1,212 @@
+/* ==========================================================
+GLOBAL ROOT
+========================================================== */
+.root {
+    -fx-font-family: "Segoe UI", "Inter", sans-serif;
+    -fx-background-color: linear-gradient(to bottom right, #f4f8ff, #eaf1ff);
+}
+
+
+/* ==========================================================
+GLASS CARD (MAIN CONTAINER) – OPTIMIZED
+========================================================== */
+.glass-card {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-background-radius: 24;
+    -fx-border-radius: 24;
+    -fx-border-color: rgba(47,128,237,0.18);
+    -fx-padding: 26;
+
+    /* Reduced shadow cost, same depth illusion */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.14), 18, 0.25, 0, 8);
+}
+
+/* Hover feedback without heavy repaint */
+.glass-card:hover {
+    -fx-border-color: rgba(47,128,237,0.35);
+    -fx-effect: dropshadow(gaussian, rgba(47,128,237,0.25), 20, 0.3, 0, 10);
+}
+
+
+/* ==========================================================
+TEXT STYLES – EYE-CATCHING MEMBER NAME
+========================================================== */
+.title-text {
+    -fx-font-size: 26px;
+    -fx-font-weight: 800;
+    -fx-text-fill: linear-gradient(to right, #2f80ed, #56ccf2);
+
+    /* Lighter shadow, same glow feel */
+    -fx-effect: dropshadow(gaussian, rgba(47,128,237,0.35), 8, 0.25, 0, 3);
+}
+
+/* Hover stays elegant, no scaling repaint */
+.title-text:hover {
+    -fx-effect: dropshadow(gaussian, rgba(86,204,242,0.6), 10, 0.3, 0, 4);
+}
+
+.subtitle-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #6b7280;
+}
+
+.section-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f2937;
+}
+
+.progress-text {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2f80ed;
+}
+
+
+/* ==========================================================
+LIST VIEW (TASKS) – FAST SELECTION
+========================================================== */
+.list-view {
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+    -fx-border-color: #dbe7ff;
+}
+
+.list-view {
+    -fx-fixed-cell-size: 48;
+}
+
+
+.list-cell {
+    -fx-padding: 10 14;
+    -fx-font-size: 14px;
+}
+
+.list-cell {
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+}
+
+/* Instant feedback – no animation cost */
+.list-cell:filled:selected {
+    /* Instant visual confirmation */
+    -fx-border-color: #2f80ed;
+    -fx-border-width: 2;
+    -fx-background-insets: 2;
+
+    /* Same look, but lighter repaint */
+    -fx-background-color: linear-gradient(to right, #2f80ed, #56ccf2);
+    -fx-text-fill: white;
+}
+
+
+.list-cell:filled:hover {
+    -fx-background-color: #eaf1ff;
+}
+
+
+/* ==========================================================
+PROGRESS BAR (MODERN + LIGHT)
+========================================================== */
+.progress-bar {
+    -fx-pref-height: 16;
+}
+
+.progress-bar {
+    -fx-indeterminate-bar-animation-time: 0;
+}
+
+
+.progress-bar .track {
+    -fx-background-color: #e5ecff;
+    -fx-background-radius: 10;
+}
+
+.progress-bar .bar {
+    -fx-background-radius: 10;
+    -fx-background-color: linear-gradient(to right, #2f80ed, #56ccf2);
+}
+
+
+/* ==========================================================
+TEXT FIELD (PROGRESS INPUT)
+========================================================== */
+.text-field {
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: #c7dbff;
+    -fx-padding: 6 10;
+}
+
+.text-field:focused {
+    -fx-border-color: #2f80ed;
+}
+
+
+/* ==========================================================
+ROUND BUTTON (+ / −)
+========================================================== */
+.round-btn {
+    -fx-background-color: #eaf1ff;
+    -fx-background-radius: 50;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2f80ed;
+    -fx-pref-width: 36;
+    -fx-pref-height: 36;
+}
+
+/* Color flip only — zero GPU stress */
+.round-btn:hover {
+    -fx-background-color: #2f80ed;
+    -fx-text-fill: white;
+}
+
+
+/* ==========================================================
+PRIMARY BUTTON (UPDATE)
+========================================================== */
+.primary-btn {
+    -fx-background-color: linear-gradient(to right, #2f80ed, #56ccf2);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 16;
+    -fx-padding: 8 26;
+}
+
+/* Reduced shadow = smoother */
+.primary-btn:hover {
+    -fx-effect: dropshadow(gaussian, rgba(47,128,237,0.4), 10, 0.25, 0, 4);
+}
+
+
+/* ==========================================================
+SECONDARY BUTTON (BACK)
+========================================================== */
+.secondary-btn {
+    -fx-background-color: transparent;
+    -fx-border-color: #2f80ed;
+    -fx-border-radius: 16;
+    -fx-text-fill: #2f80ed;
+    -fx-font-weight: bold;
+    -fx-padding: 8 24;
+}
+
+.secondary-btn:hover {
+    -fx-background-color: #2f80ed;
+    -fx-text-fill: white;
+}
+
+
+/* ==========================================================
+STATUS LABELS
+========================================================== */
+.success-label {
+    -fx-text-fill: #16a34a;
+    -fx-font-weight: bold;
+}
+
+.error-label {
+    -fx-text-fill: #dc2626;
+    -fx-font-weight: bold;
+}

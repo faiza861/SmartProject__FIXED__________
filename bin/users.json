@@ -1,0 +1,86 @@
+[
+  {
+    "id": "adm-1",
+    "name": "Sana Admin",
+    "email": "admin@smartpm.com",
+    "password": "admin123",
+    "role": "ADMIN"
+  },
+  {
+    "id": "mgr-1",
+    "name": "Ayesha Manager",
+    "email": "mgr@smartpm.com",
+    "password": "mgr123",
+    "role": "MANAGER"
+  },
+  {
+    "id": "mem-1",
+    "name": "Ali Dev",
+    "email": "ali@smartpm.com",
+    "password": "mem123",
+    "role": "MEMBER"
+  },
+  {
+    "id": "cli-1",
+    "name": "Acme Corp",
+    "email": "client@acme.com",
+    "password": "client1",
+    "role": "CLIENT"
+  },
+  {
+    "id": "mem-8293ca",
+    "name": "Sheryar Mutee",
+    "email": "sheryar@smartpm.com",
+    "password": "mem123",
+    "role": "MEMBER"
+  },
+  {
+    "id": "mem-9ed973",
+    "name": "Faiza Sher",
+    "email": "faiza@smartpm.com",
+    "password": "mem123",
+    "role": "MEMBER"
+  },
+  {
+    "id": "cli-121bbd",
+    "name": "Javed Khan",
+    "email": "client2@acme.com",
+    "password": "client1",
+    "role": "CLIENT"
+  },
+  {
+    "id": "mem-dced90",
+    "name": "Faiza Qayyum",
+    "email": "faizaqayyum@smartpm.com",
+    "password": "mem123",
+    "role": "MEMBER"
+  },
+  {
+    "id": "mem-a8e14b",
+    "name": "Asad Wasif",
+    "email": "asad@smartpm.com",
+    "password": "mem123",
+    "role": "MEMBER"
+  },
+  {
+    "id": "mem-f0468c",
+    "name": "Dr. Hadia Anum",
+    "email": "hadia@smartpm.com",
+    "password": "mem123",
+    "role": "MEMBER"
+  },
+  {
+    "id": "mem-a5e444",
+    "name": "Sana Qayyum",
+    "email": "sana@smartpm.com",
+    "password": "mem123",
+    "role": "MEMBER"
+  },
+  {
+    "id": "mem-9dddf7",
+    "name": "Maryam Shahid",
+    "email": "maryam@smartpm.com",
+    "password": "mem123",
+    "role": "MEMBER"
+  }
+]
