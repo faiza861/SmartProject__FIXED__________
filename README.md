@@ -116,7 +116,7 @@ This structure ensures clear separation of concerns and system scalability.
 
 ##  Course Information
 **Course:** Programming Fundamentals / OOP with Java  
-**Institution:** COMSATS University Islamabadc, Sahiwal Campus.
+**Institution:** COMSATS University Islamabad, Sahiwal Campus.
 ---
 ## Creators Note:
 We have developed this as our semester project for practical learning of Java OOPS.
