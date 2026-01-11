@@ -1,13 +1,13 @@
-# 📌 Smart Project Management System
+#  Smart Project Management System
 
-## 📖 Overview
+## Overview
 The **Smart Project Management System** is a JavaFX-based desktop application designed to manage software projects efficiently using **role-based access control**. It supports multiple stakeholders—**Admin, Manager, Member, and Client**—each with defined responsibilities to ensure smooth collaboration.
 
 The system allows project creation, task assignment, progress tracking, and AI-assisted risk suggestions. Data is persisted using JSON files through the GSON library. The project demonstrates strong use of **Object-Oriented Programming (OOP)** principles and layered architecture.
 
 ---
 
-## 🎯 Key Features
+##  Key Features
 - Role-based dashboards (Admin, Manager, Member, Client)
 - Secure login and registration system
 - Project creation and deletion
@@ -18,7 +18,7 @@ The system allows project creation, task assignment, progress tracking, and AI-a
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 - **Java SE** – Core programming language  
 - **JavaFX** – GUI framework  
 - **FXML** – UI layout design  
@@ -28,7 +28,7 @@ The system allows project creation, task assignment, progress tracking, and AI-a
 
 ---
 
-## 🏗 System Architecture
+##  System Architecture
 The application follows an **MVC-inspired layered architecture**:
 
 - **Presentation Layer**: JavaFX UI, FXML files, CSS styles  
@@ -39,7 +39,7 @@ The application follows an **MVC-inspired layered architecture**:
 
 ---
 
-## 🔄 Application Workflow
+## Application Workflow
 1. Application starts with a **Splash Screen**
 2. User is redirected to the **Login Screen**
 3. New users can register via the **Registration Screen**
@@ -47,31 +47,31 @@ The application follows an **MVC-inspired layered architecture**:
 
 ---
 
-## 👥 User Roles & Functionalities
+##  User Roles & Functionalities
 
-### 🔐 Admin
+###  Admin
 - Login and authentication
 - Create new projects with name, description, and deadline
 - Delete projects on client request
 
-### 📋 Manager
+###  Manager
 - View assigned projects
 - Assign tasks to members
 - Update project progress
 - View AI-based risk suggestions
 
-### 👨‍💻 Member
+###  Member
 - View assigned projects and tasks
 - Update task and project progress
 
-### 👤 Client
+###  Client
 - View project list
 - Monitor project progress
 - View project risk based on progress
 
 ---
 
-## 💾 Data Storage Design
+##  Data Storage Design
 The system uses JSON files stored in the `data` package:
 
 - **users.json** – Stores user credentials and roles  
@@ -81,7 +81,7 @@ All file operations are handled using a centralized `JSONFileHandler` utility cl
 
 ---
 
-## 📊 UML Design
+##  UML Design
 - `User` is a base class extended by `Admin`, `Manager`, `Member`, and `Client`
 - `Project` contains multiple `Task` objects
 - Repository classes manage data persistence
@@ -91,7 +91,7 @@ This structure ensures clear separation of concerns and system scalability.
 
 ---
 
-## ⚙ Non-Functional Requirements
+##  Non-Functional Requirements
 - User-friendly interface
 - Role-based access control
 - Reliable data persistence
@@ -100,7 +100,7 @@ This structure ensures clear separation of concerns and system scalability.
 
 ---
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 - Database integration (MySQL)
 - Real-time notifications
 - Advanced AI-based risk analysis
@@ -108,12 +108,15 @@ This structure ensures clear separation of concerns and system scalability.
 
 ---
 
-## 👨‍👩‍👧‍👦 Team Members
+##  Team Members
 - **Faiza Qayyum** (SP25-BCS-004)  
 - **Syed Shehryar Mutee** (SP25-BCS-050)
 
 ---
 
-## 📌 Course Information
+##  Course Information
 **Course:** Programming Fundamentals / OOP with Java  
-**Institution:** COMSATS University Islamabad
+**Institution:** COMSATS University Islamabadc, Sahiwal Campus.
+---
+## Creators Note:
+We have developed this as our semester project for practical learning of Java OOPS.
